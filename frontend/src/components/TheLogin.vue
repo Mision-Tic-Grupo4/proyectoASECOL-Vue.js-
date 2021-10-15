@@ -53,7 +53,7 @@ export default {
   methods: {
     login() {
       axios
-        .post("http://localhost:3000/api/usuario/login", {
+        .post("https://api-rest-commerce.herokuapp.com/api/auth/login", {
           correo: this.correo,
           password: this.password,
         })
