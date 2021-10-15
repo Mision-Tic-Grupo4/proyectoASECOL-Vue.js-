@@ -255,6 +255,7 @@ import axios from 'axios'
         if (this.editedIndex > -1) {
           // Object.assign(this.categoria[this.editedIndex], this.editedItem)
            axios.put('http://localhost:3000/api/categoria/update',{
+            _id : this.editedItem._id,
             nombre : this.editedItem.nombre,
             descripcion: this.editedItem.descripcion
           })

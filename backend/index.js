@@ -32,5 +32,5 @@ app.use('/api',apiRouter);
 app.set('PORT', process.env.PORT || 3000);
 
 app.listen(app.get('PORT'),() =>{
-    console.log(`Runing on http://localhost:${app.get('PORT')}`)
+    console.log(`Runing on:${app.get('PORT')}`)
 })

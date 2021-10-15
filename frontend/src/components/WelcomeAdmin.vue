@@ -1,9 +1,9 @@
 <template>
   <v-card
     class="mx-auto"
-    color="#26c6da"
+    color="#284854"
     dark
-    max-width="650"
+    max-width="800"
   >
     <v-card-title>
       <v-icon
@@ -14,40 +14,23 @@
       </v-icon>
     </v-card-title>
 
-    <v-card-text class="text-h5 font-weight-bold">
+    <!-- <v-card-text class="text-h5 font-weight-bold">
         ""
-    </v-card-text>
+    </v-card-text> -->
 
-    <v-card-actions>
+    <!-- <v-card-actions>
       <v-list-item class="grow">
-        <v-list-item-avatar color="grey darken-3">
-          <v-img
-            class="elevation-6"
-            alt=""
-            src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light"
-          ></v-img>
-        </v-list-item-avatar>
-
-        <v-list-item-content>
-          <v-list-item-title>Evan You</v-list-item-title>
-        </v-list-item-content>
-
-        <v-row
-          align="center"
+           <v-row
+          align="left"
           justify="end"
         >
           <v-icon class="mr-1">
-            mdi-heart
+            mdi-github
           </v-icon>
-          <span class="subheading mr-2">256</span>
-          <span class="mr-1">·</span>
-          <v-icon class="mr-1">
-            mdi-share-variant
-          </v-icon>
-          <span class="subheading">45</span>
-        </v-row>
+          
+        </v-row> 
       </v-list-item>
-    </v-card-actions>
+     </v-card-actions> -->
   </v-card>
 </template>
 
@@ -64,6 +47,9 @@ import decode from 'jwt-decode'
             return token;
         }
     },
+    methods: {
+      
+    }
     
   }
 </script>

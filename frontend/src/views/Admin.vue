@@ -104,7 +104,7 @@ export default {
 };
 </script>
 <style scoped>
- #nav {
+ /* #nav {
     background-color: #798B95;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     border-radius: 0px 0px 30px 30px;
@@ -112,8 +112,13 @@ export default {
     padding: 30px;
     display: flex;
     align-items: center;
+} */
+#nav{
+    background-color: #798B95;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: 0px 0px 30px 30px;
+    width: 100vw;
 }
-
 #nav a {
     font-weight: bold;
     color: white;

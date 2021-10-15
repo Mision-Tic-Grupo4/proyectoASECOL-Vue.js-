@@ -1,37 +1,18 @@
 <template>
-    <div id="nav" class="header">
-        <a href="/">
-            <img src="../assets/img/logo.png" alt="">
-        </a>
-        <router-link :to="{
-            name : 'Home'
-        }">Home</router-link> |
-        <!-- <nav > -->
-            <a href="#home">Servicios</a>  |
-            <a href="#news">Noticias </a>  |
-            <a href="#users">Nosotros </a>  |
-        <!-- </nav>   -->
-        
-        <router-link :to="{
-            name: 'Login'
-        }"
-        v-if="!isLogin"
-        >Login</router-link> 
-
-        <router-link :to="{
-            name: 'Admin'
-        }"
-        v-else-if="isAdmin">Admin</router-link>
-
-        <router-link :to="{
-            name: 'Cliente'
-        }"
-        v-else>Cliente</router-link>
-            <div class="bi bi-list"><v-icon medium color="primary" >mdi-menu</v-icon></div>
-            <div class="bi bi-cart4" id="cart-btn"><v-icon medium color="primary" >mdi-cart</v-icon></div>
-            <div class="bi bi-person-fill" id="login-btn"><v-icon medium color="primary" >mdi-account</v-icon></div>
-             
-    </div>
+    <nav class="header">
+        <a href="/"><img src="../assets/img/logo.png" alt=""></a>
+        <router-link class="nav-item" :to="{name : 'Home'}">Home</router-link> |
+        <a class="nav-item" href="#home">Servicios</a>  |
+        <a class="nav-item" href="#news">Noticias </a>  |
+        <a class="nav-item" href="#users">Nosotros</a>|
+    
+        <router-link class="nav-item" :to="{name: 'Login'}" v-if="!isLogin">Login</router-link> 
+        <router-link class="nav-item" :to="{name: 'Admin'}" v-else-if="isAdmin">Admin</router-link>
+        <router-link class="nav-item" :to="{name: 'Cliente'}" v-else>Cliente</router-link>
+        <div class="nav-item bi bi-list"><v-icon medium color="primary" >mdi-menu</v-icon></div>
+        <div class="nav-item bi bi-cart4" id="cart-btn"><v-icon medium color="primary" >mdi-cart</v-icon></div>
+        <div class="nav-item bi bi-person-fill" id="login-btn"><v-icon medium color="primary" >mdi-account</v-icon></div>  
+    </nav>
 </template>
 
 <script>
@@ -55,3 +36,14 @@ export default {
     }
 }
 </script>
+<style scoped>
+.nav-item {
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    color: var(--blanco) !important;
+}
+
+.header a:hover {
+    color: var(--azul-hover);
+}
+</style>
